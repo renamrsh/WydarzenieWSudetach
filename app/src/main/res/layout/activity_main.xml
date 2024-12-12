@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Wydarzenie w Sudetach"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:srcCompat="@drawable/widok" />
+
+    <TextView
+        android:id="@+id/licznik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="8dp"
+        android:text="0 polubień"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/polub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#aaabfa"
+            android:layout_weight="1"
+            android:text="POLUB"
+            />
+        <Button
+            android:id="@+id/usun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#aaabfa"
+            android:layout_weight="1"
+            android:text="USUŃ"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Podaj e-mail:"
+        />
+    <EditText
+        android:id="@+id/haslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Podaj hasło:"/>
+    <EditText
+        android:id="@+id/powtorz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Powtórz hasło:"/>
+    <Button
+        android:id="@+id/zapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZAPISZ"
+        android:layout_gravity="center" />
+    <Button
+        android:id="@+id/zobacz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZOBACZ UCZESTNIKA"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/komunikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obszar komunikatów"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
