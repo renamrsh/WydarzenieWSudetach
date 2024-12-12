@@ -36,15 +36,17 @@ public class MainActivity extends AppCompatActivity {
         polub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                update(counter++);
+                counter++;
+                update(counter);
             }
         });
         usun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(counter>0){
-                    update(counter);
+                   counter--;
                 }
+                update(counter);
             }
         });
         zapisz.setOnClickListener(new View.OnClickListener() {
